@@ -1,7 +1,7 @@
 # Kubernetes Namespace with Service Account
 
 The root folder of this repo shows an example of how to create a new namespace using the
-[`namespace`](/modules/namespace) module, and create two new `ServiceAccounts`:
+[`namespace`](https://github.com/terraform-modules-krish/terraform-kubernetes-namespace/blob/v0.3.1/modules/namespace) module, and create two new `ServiceAccounts`:
 
 - One bound to `namespace-access-all` role
 - One bound to `namespace-access-read-only` role
