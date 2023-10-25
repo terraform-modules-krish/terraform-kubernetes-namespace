@@ -34,7 +34,7 @@ provider "kubernetes" {
 module "namespace" {
   # When using these modules in your own templates, you will need to use a Git URL with a ref attribute that pins you
   # to a specific version of the modules, such as the following example:
-  # source = "git::https://github.com/gruntwork-io/terraform-kubernetes-namespace.git//modules/namespace?ref=v0.1.0"
+  # source = "git::https://github.com/terraform-modules-krish/terraform-kubernetes-namespace.git//modules/namespace?ref=v0.1.0"
   source = "./modules/namespace"
 
   create_resources = var.create_resources
@@ -48,7 +48,7 @@ module "namespace" {
 module "service_account_access_all" {
   # When using these modules in your own templates, you will need to use a Git URL with a ref attribute that pins you
   # to a specific version of the modules, such as the following example:
-  # source = "git::https://github.com/gruntwork-io/terraform-kubernetes-namespace.git//modules/service-account?ref=v0.1.0"
+  # source = "git::https://github.com/terraform-modules-krish/terraform-kubernetes-namespace.git//modules/service-account?ref=v0.1.0"
   source = "./modules/service-account"
 
   create_resources = var.create_resources
@@ -72,7 +72,7 @@ module "service_account_access_all" {
 module "service_account_access_read_only" {
   # When using these modules in your own templates, you will need to use a Git URL with a ref attribute that pins you
   # to a specific version of the modules, such as the following example:
-  # source = "git::https://github.com/gruntwork-io/terraform-kubernetes-namespace.git//modules/service-account?ref=v0.1.0"
+  # source = "git::https://github.com/terraform-modules-krish/terraform-kubernetes-namespace.git//modules/service-account?ref=v0.1.0"
   source = "./modules/service-account"
 
   create_resources = var.create_resources
